@@ -48,14 +48,72 @@ questionsDict = [
         "pergunta" : 'A correta armazenagem de produtos finais deve seguir as seguintes diretrizes: (i) conservar ao abrigo do sol e calor, em local limpo e seco, arejado e sem odor e (ii) não congelar.',
         "resposta" : 'Verdadeiro'
     },
+
+    {
+        "index" : 8,
+        "pergunta" : 'É correto afirmar que um produto com contaminação biológica é seguro para consumo.',
+        "resposta" : 'Falso'
+    },
+
+    {
+        "index" : 9,
+        "pergunta" : 'Fornecer ao mercado produtos seguros e buscar melhoraria continua de seus processos são itens que fazem parte da Política de Segurança de Alimentos.',
+        "resposta" : 'Verdadeiro'
+    },
+
+    {
+        "index" : 10,
+        "pergunta" : 'A contaminação física, química e biológica do produto pode representar efeito adverso à saúde do consumidor',
+        "resposta" : 'Verdadeiro'
+    },
+
+    {
+        "index" : 11,
+        "pergunta" : 'Um dos conceitos de Segurança de Alimentos é cuidar da saúde das pessoas.',
+        "resposta" : 'Verdadeiro'
+    },
+
+    {
+        "index" : 12,
+        "pergunta" : 'São itens fundamentais para prevenir e reduzir os perigos a segurança de alimentos: higiene, organização e limpeza.',
+        "resposta" : 'Verdadeiro'
+    },
+
+    {
+        "index" : 13,
+        "pergunta" : '"Não consumir alimento fora das áreas designadas e não os guardar em locais impróprios" é uma regra de ouro referente a segurança de alimento',
+        "resposta" : 'Verdadeiro'
+    },
+
+    {
+        "index" : 14,
+        "pergunta" : 'Um dos conceitos de Segurança de Alimentos é cuidar da saúde das pessoas.',
+        "resposta" : 'Verdadeiro'
+    },
+
+    {
+        "index" : 15,
+        "pergunta" : 'Deitar ou sentar na grama e depois acessar as áreas de manipulação de alimentos ou armazenagem de ingredientes é uma conduta vista como correta.',
+        "resposta" : 'Falso'
+    },
+
+    {
+        "index" : 16,
+        "pergunta" : 'Os pacotes de refrigerantes devem ser armazenados diretamente no chão, não sendo necessário o uso do palite.',
+        "resposta" : 'Falso'
+    },
+
+    {
+        "index" : 17,
+        "pergunta" : 'E permitido lanchar e dormir no espaço ZEN.',
+        "resposta" : 'Falso'
+    },     
 ]
 
 '''
-aleatoryIndex = randint(0,7)
+aleatoryIndex = randint(0,17)
 
 for i in range(len(questionsDict)):
     if questionsDict[i]["index"] == aleatoryIndex:
         print(questionsDict[i]['pergunta'])
-    else: 
-        pass
 '''
