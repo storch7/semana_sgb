@@ -26,14 +26,14 @@ formularys = [form1,
 
 #answears 
 answears = ["Verdadeiro", 
+            "Verdadeiro", 
+            "Verdadeiro",
             "Falso", 
+            "Verdadeiro", 
             "Verdadeiro",
             "Verdadeiro", 
-            "Falso", 
+            "Verdadeiro", 
             "Falso",
-            "Verdadeiro", 
-            "Falso", 
-            "Verdadeiro",
             "Verdadeiro"]
 
 #selecting registers
