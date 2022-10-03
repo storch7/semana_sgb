@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+*,  *::before, *::after{
+  font-size: 15px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width:1280px) {
+  /*1280 x 800 px*/
+  *,  *::before, *::after{
+    font-size: 15px;
+  }
+}
+
+@media (min-width:1920px) {
+  /* Tela 47 polegadas */
+  /*1920 x 1080 px*/
+  *,  *::before, *::after{
+    font-size: 25px;
+  }
+}
+
+@media (min-width:3840px) {
+  /* Tela 55 polegadas */
+  /*3840 x 2160 px*/
+  *,  *::before, *::after{
+    font-size: 42px;
+  }
+}
