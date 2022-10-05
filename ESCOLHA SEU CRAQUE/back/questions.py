@@ -1,5 +1,3 @@
-from random import randint
-
 questionsDict = [
     {
         "index" : 0,
@@ -183,10 +181,3 @@ questionsDict = [
 
 ]
 
-'''
-aleatoryIndex = randint(0,17)
-
-for i in range(len(questionsDict)):
-    if questionsDict[i]["index"] == aleatoryIndex:
-        print(questionsDict[i]['pergunta'])
-'''
