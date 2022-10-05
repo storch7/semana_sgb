@@ -17,7 +17,3 @@ def getQuestions() :
             question = questionsDict[i]['pergunta']
     
     return question
-
-teste = getQuestions()
-
-print(teste)
