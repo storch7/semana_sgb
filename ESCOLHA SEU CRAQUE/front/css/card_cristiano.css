@@ -1,0 +1,53 @@
+.card-cristiano{
+    width: 20rem;
+    height: 27.5rem;
+}
+
+.card_inner-c {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card_inner-c.flip_cristiano {
+    transform: rotateY(180deg);
+}
+
+.card_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+}
+
+.card_face-front-c{
+    background-image: url('../img/Cristiano.png'); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_face-front-c h2{
+    margin-top: 270px;
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #a60321c9;
+    box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+    color: whitesmoke;
+    font-size: 32px;
+}
+
+.card_face-back-c {
+    background-image: url('../img/card-question.png');
+    transform: rotateY(180deg);
+    background-size: cover;
+}

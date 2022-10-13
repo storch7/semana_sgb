@@ -25,10 +25,10 @@ formularys = [form1,
               form10]
 
 #answears 
-answears = ["Verdadeiro", 
+answears = ["Falso", 
             "Verdadeiro", 
             "Verdadeiro",
-            "Falso", 
+            "Verdadeiro", 
             "Verdadeiro", 
             "Verdadeiro",
             "Verdadeiro", 

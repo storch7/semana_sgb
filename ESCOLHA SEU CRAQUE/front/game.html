@@ -4,24 +4,69 @@
     <title>Escolha seu craque</title>
     <link rel="stylesheet" href="./css/index.css"/>
     <link rel="stylesheet" href="./css/game.css"/>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="./css/card_neymar.css">
+    <link rel="stylesheet" href="./css/card_messi.css">
+    <link rel="stylesheet" href="./css/card_cristiano.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
-    <section class="container">
-    
-        <a href="#">
-            <img class="jogador" src="./img/Neymar.png" alt="Neymar">
-        </a>
-    
-        <a href="#">
-            <img class="jogador" src="./img/Messi.png" alt="Messi">
-        </a>
-    
-        <a href="#">
-            <img class="jogador" src="./img/Cristiano.png" alt="Cristiano">    
-        </a>
+    <header class="animate__animated animate__bounceIn">
+        <img class="logo" src="img/logo-game.png" alt="Escolha seu craque">
+    </header>
+
+    <section class="cards_container">
+
+        <div class="animate__animated animate__backInLeft card-neymar">
+            <div class="card_inner-n">
+                <div class="card_face card_face-front">
+                    <h2>Selecionar</h2>
+                </div>
+
+                <div class="card_face card_face-back">
+                    <div class="card_content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="animate__animated animate__backInLeft card-messi">
+            <div class="card_inner-m">
+                <div class="card_face card_face-front-m">
+                    <h2>Selecionar</h2>
+                </div>
+                
+                <div class="card_face card_face-back-m">
+                    <div class="card_content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="animate__animated animate__backInLeft card-cristiano">
+            <div class="card_inner-c">
+                <div class="card_face card_face-front-c">
+                    <h2>Selecionar</h2>
+                </div>
+
+                <div class="card_face card_face-back-c">
+                    <div class="card_content">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
     </section>
+    
+    <script src="./js/flip_neymar.js"></script>
+    <script src="./js/flip_messi.js"></script>
+    <script src="./js/flip_cristiano.js"></script>
+    
 </body>
 </html>
