@@ -48,6 +48,6 @@
 
 .card_face-back{
     background-image: url('../img/card-question.png');
-    transform: rotateY(180deg);
     background-size: cover;
+    transform: rotateY(180deg);
 }
