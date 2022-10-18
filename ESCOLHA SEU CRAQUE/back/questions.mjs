@@ -1,4 +1,4 @@
-let questions = new Map();
+var questions = new Map();
 
 questions.set(0, {pergunta: "As normas de segurança de alimentos se aplicam desde os nossos fornecedores homologados e finalizam no consumo do produto pelo cliente final.", resposta:"Verdadeiro"});
 
@@ -59,3 +59,5 @@ questions.set(26, {pergunta: "Ao higienizar as mãos posso secá-las na minha ro
 questions.set(27, {pergunta: "Todos os colaboradores são responsáveis pela limpeza do ambiente.", resposta: "Verdadeiro"});
 
 questions.set(28, {pergunta: "Os produtos químicos devem ser mantidos com acesso restrito e devem estar dentro do prazo de validade.", resposta: "Verdadeiro"});
+
+export { questions }
