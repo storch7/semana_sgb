@@ -1,6 +1,6 @@
-const card_neymar_question = document.querySelector('.card_face-front h2');
+const card_cristiano_question = document.querySelector('.card_face-front-c h2');
 
-card_neymar_question.addEventListener('click', function () {
+card_cristiano_question.addEventListener('click', function () {
 
     var questions = new Map();
 
@@ -73,29 +73,30 @@ card_neymar_question.addEventListener('click', function () {
     var indexQuestion = getRandomInt(0, 29);
     var dados = questions.get(indexQuestion);
 
-    var imprimir = document.getElementById('imprimir');
+    var imprimir = document.getElementById('imprimir_c');
     imprimir.innerHTML = dados.pergunta;
 
-    const neymar_true = document.querySelector('alternativa_label_t');
-    neymar_true.addEventListener('click', function () {
-        if (dados.resposta == 'Verdadeiro') {
-            alert("Resposta Correta!");
+    const cristiano_true = document.querySelector('.alternativa_label_t_c');
+    cristiano_true.addEventListener('click', function () {
+        if (dados.resposta == "Verdadeiro") {
+            alert("Resposta correta!");
+            document.location.reload(true);
         }
-        else if (dados.resposta != 'Verdadeiro') {
-            alert("Resposta Incorreta!");
+        else {
+            alert("Resposta incorreta!");
+            document.location.reload(true);
         }
     });
 
-    const neymar_false = document.querySelector('alternativa_label_f');
-    neymar_false.addEventListener('click', function () {
+    const cristiano_false = document.querySelector('.alternativa_label_f_c');
+    cristiano_false.addEventListener('click', function () {
         if (dados.resposta == 'Falso') {
-            alert("Resposta Correta!");
+            alert("Resposta correta!");
+            document.location.reload(true);
         }
-        else if (dados.resposta != 'Falso') {
-            alert("Resposta Incorreta!");
+        else {
+            alert("Resposta incorreta!");
+            document.location.reload(true);
         }
     });
 });
-
-
-
