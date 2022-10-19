@@ -46,7 +46,7 @@ card_cristiano_question.addEventListener('click', function () {
 
     questions.set(19, {pergunta: "Sol e chuva podem danificar as embalagens, alterando características do produto - como gosto, odor e aparência -, afetando a segurança do alimento.", resposta: "Verdadeiro"});
 
-    questions.set(20, {pergunta: "A política de segurança de alimentos não garante totalmente um alimento seguro no mercado.", pergunta: "Verdadeiro"});
+    questions.set(20, {pergunta: "A política de segurança de alimentos não garante totalmente um alimento seguro no mercado.", resposta: "Verdadeiro"});
 
     questions.set(21, {pergunta: "Sempre que falamos de segurança de alimentos, estamos nos referindo única e exclusivamente a produtos livres de contaminações.", resposta:"Falso"});
 
