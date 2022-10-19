@@ -79,24 +79,36 @@ card_messi_question.addEventListener('click', function () {
     const messi_true = document.querySelector('.alternativa_label_t_m');
     messi_true.addEventListener('click', function () {
         if (dados.resposta == "Verdadeiro") {
-            alert("Resposta correta!");
-            document.location.reload(true);
+            Swal.fire(
+                'Bom trabalho!',
+                'Sua resposta está correta :)',
+                'success'
+              )
         }
         else {
-            alert("Resposta incorreta!");
-            document.location.reload(true);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sua resposta está incorreta :/',
+            })
         }
     });
 
     const messi_false = document.querySelector('.alternativa_label_f_m');
     messi_false.addEventListener('click', function () {
         if (dados.resposta == 'Falso') {
-            alert("Resposta correta!");
-            document.location.reload(true);
+            Swal.fire(
+                'Bom trabalho!',
+                'Sua resposta está correta :)',
+                'success'
+              )
         }
         else {
-            alert("Resposta incorreta!");
-            document.location.reload(true);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sua resposta está incorreta :/',
+            });
         }
     });
 });

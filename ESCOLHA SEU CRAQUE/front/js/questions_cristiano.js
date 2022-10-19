@@ -79,24 +79,36 @@ card_cristiano_question.addEventListener('click', function () {
     const cristiano_true = document.querySelector('.alternativa_label_t_c');
     cristiano_true.addEventListener('click', function () {
         if (dados.resposta == "Verdadeiro") {
-            alert("Resposta correta!");
-            document.location.reload(true);
+            Swal.fire(
+                'Bom trabalho!',
+                'Sua resposta está correta :)',
+                'success'
+              )
         }
         else {
-            alert("Resposta incorreta!");
-            document.location.reload(true);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sua resposta está incorreta :/',
+            })
         }
     });
 
     const cristiano_false = document.querySelector('.alternativa_label_f_c');
     cristiano_false.addEventListener('click', function () {
         if (dados.resposta == 'Falso') {
-            alert("Resposta correta!");
-            document.location.reload(true);
+            Swal.fire(
+                'Bom trabalho!',
+                'Sua resposta está correta :)',
+                'success'
+              )
         }
         else {
-            alert("Resposta incorreta!");
-            document.location.reload(true);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sua resposta está incorreta :/',
+            });
         }
     });
 });

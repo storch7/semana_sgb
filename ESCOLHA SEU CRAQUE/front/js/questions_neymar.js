@@ -79,24 +79,36 @@ card_neymar_question.addEventListener('click', function () {
     const neymar_true = document.querySelector('.alternativa_label_t');
     neymar_true.addEventListener('click', function () {
         if (dados.resposta == "Verdadeiro") {
-            alert("Resposta correta!");
-            document.location.reload(true);
+            Swal.fire(
+                'Bom trabalho!',
+                'Sua resposta está correta :)',
+                'success'
+              )
         }
         else {
-            alert("Resposta incorreta!");
-            document.location.reload(true);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sua resposta está incorreta :/',
+            })
         }
     });
 
     const neymar_false = document.querySelector('.alternativa_label_f');
     neymar_false.addEventListener('click', function () {
         if (dados.resposta == 'Falso') {
-            alert("Resposta correta!");
-            document.location.reload(true);
+            Swal.fire(
+                'Bom trabalho!',
+                'Sua resposta está correta :)',
+                'success'
+              )
         }
         else {
-            alert("Resposta incorreta!");
-            document.location.reload(true);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sua resposta está incorreta :/',
+            });
         }
     });
 });
